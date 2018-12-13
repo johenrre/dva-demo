@@ -5,6 +5,8 @@
     "build": "roadhog build"
   },
   "dependencies": {
+    "antd": "^3.11.2",
+    "babel-plugin-import": "^1.11.0",
     "dva": "^2.4.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
