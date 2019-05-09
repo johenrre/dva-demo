@@ -9,10 +9,23 @@ const Products = ({ dispatch, products }) => {
       payload: id,
     });
   }
+  function handleAdd(id) {
+    const l = products.length
+    const aa = {
+      name: `test${l + 1}`,
+      id: l + 1,
+    }
+    dispatch({
+      type: 'products/add',
+      payload: aa,
+    });
+  }
+  console.log('test', products);
   return (
     <div>
       <h2>List of Products</h2>
       <ProductList onDelete={handleDelete} products={products} />
+      <button onClick={handleAdd}>添加products</button>
     </div>
   );
 };
